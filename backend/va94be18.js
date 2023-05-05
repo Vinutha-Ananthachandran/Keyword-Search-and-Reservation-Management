@@ -25,7 +25,7 @@ app.get('/bizdetail',(req,res) => {
   let biz_id = req.query.id;
   let url = 'https://api.yelp.com/v3/businesses/'+biz_id
 
-  let yelpKey = 'CybJp4vrG19COqSorVyriOa_ikx4NVUZ84XToSPjMWZ99Sr8fXzHe-qZ2GveMcwjPkVyaiZaacdEF4kwUx8an_569M-4YxJYiUcf1gb1eynOOPv8upuocMFsEy8_Y3Yx';
+  let yelpKey = '*****';
   let authToken = 'Bearer '+yelpKey;
   const getBizResult = async() =>{
     try{
@@ -51,7 +51,7 @@ app.get('/bizdetail',(req,res) => {
 function nextCallReview(biz_id,obj1,res){
   let revUrl = 'https://api.yelp.com/v3/businesses/'+biz_id+'/reviews';
 
-  let yelpKey = 'CybJp4vrG19COqSorVyriOa_ikx4NVUZ84XToSPjMWZ99Sr8fXzHe-qZ2GveMcwjPkVyaiZaacdEF4kwUx8an_569M-4YxJYiUcf1gb1eynOOPv8upuocMFsEy8_Y3Yx';
+  let yelpKey = '********';
   let authToken = 'Bearer '+yelpKey;
   const getYelpReview = async() =>{
     try{
@@ -77,7 +77,7 @@ function nextCallReview(biz_id,obj1,res){
 
 function getGeocodeData(loc,term,cat,rad,res){
   let location = encodeURIComponent(loc);
-  let url = 'https://maps.googleapis.com/maps/api/geocode/json?address='+location+'&key=AIzaSyASbUA5whItqPIrzjqJfXN50OdOr8KZmlk';
+  let url = '******';
 
   const getGoogleApi = async() =>{
     try{
@@ -100,7 +100,7 @@ function callToYelpApi(term,lat,long,cat,rad,res){
     let limit = 10;
     let url = 'https://api.yelp.com/v3/businesses/search?term='+term+'&latitude='+lat+'&longitude='+long+'&categories='+cat+'&radius='+rad+'&limit='+limit;
 
-    let yelpKey = 'CybJp4vrG19COqSorVyriOa_ikx4NVUZ84XToSPjMWZ99Sr8fXzHe-qZ2GveMcwjPkVyaiZaacdEF4kwUx8an_569M-4YxJYiUcf1gb1eynOOPv8upuocMFsEy8_Y3Yx';
+    let yelpKey = '*****';
     let authToken = 'Bearer '+yelpKey;
     const getYelpResult = async() =>{
       try{
@@ -127,7 +127,7 @@ app.get('/autocomplete',(req,res) => {
   let term = req.query.term;
   let url = 'https://api.yelp.com/v3/autocomplete?text='+term;
 
-  let yelpKey = 'CybJp4vrG19COqSorVyriOa_ikx4NVUZ84XToSPjMWZ99Sr8fXzHe-qZ2GveMcwjPkVyaiZaacdEF4kwUx8an_569M-4YxJYiUcf1gb1eynOOPv8upuocMFsEy8_Y3Yx';
+  let yelpKey = '*****';
   let authToken = 'Bearer '+yelpKey;
   const getYelpAutocomplete = async() =>{
     try{
