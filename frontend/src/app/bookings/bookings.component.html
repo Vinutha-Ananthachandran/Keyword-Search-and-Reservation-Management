@@ -1,0 +1,29 @@
+<div class="container-fluid rounded-pill bg-white mt-5 px-0 text-center" *ngIf="localData.length == 0">
+  <h5 class="text-danger">No reservations to show</h5>
+</div>
+
+<div class="container-fluid rounded mt-5 px-0 text-center" *ngIf="localData.length > 0">
+  <h5 class="mb-3">List of your reservations</h5>
+  <table class="table bg-white rtab mx-auto">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Business Name</th>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">E-mail</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="heffect2" *ngFor="let line of localData">
+        <td class="fw-bold"></td>
+        <td>{{ line.get('bname') }}</td>
+        <td>{{ line.get('date') }}</td>
+        <td>{{ line.get('time') }}</td>
+        <td>{{ line.get('email') }}</td>
+        <td><i class="bi bi-trash text-muted heffect1" (click)="delRow(line.get('bname'))"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

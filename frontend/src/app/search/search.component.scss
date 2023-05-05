@@ -1,0 +1,172 @@
+@media only screen and (max-width: 844px) {
+
+  .main {
+    width: 85%;
+    height: 55%;
+  }
+
+  .sres{
+    width: 90%;
+  }
+
+  .nres{
+    width: 50%;
+  }
+
+  .itxt {
+    font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+    font-size: 22px;
+  }
+
+  .rimg{
+    height: 60px;
+    width: 55px;
+  }
+
+  .crestab tr {
+    display: table;
+    width:100%;
+  }
+
+  .crestab td {
+    display: table-row;
+  }
+
+  .restab>tr{
+    height: 70px;
+  }
+
+  .restab>tr:hover{
+    cursor: pointer;
+  }
+
+  ::ng-deep.mat-tab-header {
+    background-color: #ffd800;
+    color: white;
+  }
+
+  .tabtext{
+    font-size: 12px;
+  }
+
+  .twitter{
+    color: #1DA1F2;
+  }
+
+  .fb{
+    color: blue;
+  }
+
+  .bimg{
+    max-height: 310px;
+    width: 310px;
+  }
+
+  .heffect:hover{
+    cursor: pointer;
+  }
+
+  .my-google-map{
+    .map-container{
+      width: 100%;
+    }
+  }
+
+  .cres{
+    width: 90%;
+  }
+
+  .trdim{
+    width: 50%;
+  }
+
+  .twid{
+    width: 25% !important;
+    appearance: none !important;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .sres{
+    width: 75%;
+  }
+
+  .nres{
+    width: 25%;
+  }
+
+  .trdim{
+    width: 50%;
+  }
+
+  .itxt {
+    font-family: 'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+    font-size: 22px;
+  }
+
+  .rimg{
+    height: 100px;
+    width: 95px;
+  }
+
+  .restab>tr{
+    height: 110px;
+  }
+
+  .restab>tr:hover{
+    cursor: pointer;
+  }
+
+  ::ng-deep.mat-tab-header {
+    background-color: #ffd800;
+    color: white;
+  }
+
+  .tabtext{
+    font-size: 12px;
+  }
+
+  .twitter{
+    color: #1DA1F2;
+  }
+
+  .fb{
+    color: blue;
+  }
+
+  .bimg{
+    max-height: 300px;
+    width: 250px;
+  }
+
+  .heffect:hover{
+    cursor: pointer;
+  }
+
+  .my-google-map{
+    .map-container{
+      width: 100%;
+    }
+  }
+
+  .cres{
+    width: 50%;
+  }
+
+  .twid{
+    width: 15% !important;
+    appearance: none !important;
+  }
+
+}
+
+.nodis{
+  display: none;
+}
+
+.main {
+  width: 45%;
+  height: 70% !important;
+}

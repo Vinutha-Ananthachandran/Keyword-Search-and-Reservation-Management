@@ -1,0 +1,52 @@
+@media only screen and (max-width: 844px) {
+  .heffect1:hover {
+    cursor: pointer;
+  }
+
+  .heffect2:hover {
+    background-color: #F0F0F0;
+  }
+
+  .rtab {
+    width: 60%;
+  }
+
+  table {
+    width: 50%;
+    counter-reset: row-num;
+  }
+
+  table tbody tr {
+    counter-increment: row-num;
+  }
+
+  table tbody tr td:first-child::before {
+    content: counter(row-num) ". ";
+  }
+}
+@media only screen and (min-width: 992px) {
+  .heffect1:hover {
+    cursor: pointer;
+  }
+
+  .heffect2:hover {
+    background-color: #F0F0F0;
+  }
+
+  .rtab {
+    width: 60%;
+  }
+
+  table {
+    width: 50%;
+    counter-reset: row-num;
+  }
+
+  table tbody tr {
+    counter-increment: row-num;
+  }
+
+  table tbody tr td:first-child::before {
+    content: counter(row-num);
+  }
+}
