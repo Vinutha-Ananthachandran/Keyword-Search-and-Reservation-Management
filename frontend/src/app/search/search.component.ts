@@ -175,7 +175,7 @@ export class SearchComponent implements OnInit {
       location.setAttribute('disabled', '');
       location.required = false;
       this.userForm.get('location') ?.setValue("");
-      var req = this.http.get('https://ipinfo.io/json?token=e33cdfd60a0c2e');
+      var req = this.http.get('https://ipinfo.io/json?token=****');
       req.subscribe(response => {
         this.lat = JSON.stringify(response);
       });
